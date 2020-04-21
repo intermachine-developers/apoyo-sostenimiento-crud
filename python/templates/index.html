@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+{% block body %}
+    <section class="col s9">
+      <table class="striped">
+        <thead>
+          <tr>
+            <th>n°</th>
+            <th>nombre completo</th>
+            <th>email</th>
+            <th>telefono</th>
+            <th>tipo de doc.</th>
+            <th># doc.</th>
+            <th>ficha</th>
+          </tr>
+        </thead>
+        <tbody id="aprendices" ></tbody>
+      </table>
+    </section>
+	<section class="col s3">
+	<form id="apoyo-form">
+    <input type="hidden" id="oID" value="0">
+          <div class="input-field">
+            <i class="material-icons prefix">account_circle</i>
+            <input type="text" id="fullname" class="form-control" name="fullname" placeholder="FullName" autofocus autocomplete="off" required>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">email</i>
+            <input type="email" id="email" class="form-control" name="email" placeholder="Email" autocomplete="off" required>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">phone</i>
+            <input type="tel" name="phone" id="phone"  placeholder="telefono" autocomplete="off" required>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">assignment</i>
+            <input type="number" name="num_doc" id="num_doc"  placeholder="numero de documento" autocomplete="off" required>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">contacts</i>
+            <select id="type_doc" class="options" name="type_doc" required>
+              <option value="">selecione un documento</option> 
+              <option value="CC" >cedula de ciudanaria</option>
+              <option value="TI">tarjeta de identidad</option>
+            </select>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">assignment_ind</i>
+            <input type="number" id="ficha" class="form-control" name="ficha" placeholder="Ficha" autocomplete="off" required>
+          </div>
+          <button class="green darken-4 waves-effect waves-light btn-large">
+            Save 
+            <i class="material-icons right">send</i>
+          </button>
+        </form>
+ </section>
+{% endblock %}

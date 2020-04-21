@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>apoyo de sostenimiento CRUD</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/materialize.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+  </head>
+  <body>
+
+    <!-- NAVIGATION  -->
+    <nav class="black nav-wrapper navbar-fixed">
+      <header class="brand-logo">apoyo de sostenimiento CRUD</header>
+    </nav>
+
+    <main class="row">
+      {% block body %}
+      {% endblock %}
+    </main>
+
+    <!-- footer -->
+    <!-- scripts -->
+    <script src="{{url_for('static', filename='js/materialize.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/index.js')}}"></script>
+  </body>
+</html>

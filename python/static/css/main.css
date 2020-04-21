@@ -1,0 +1,4 @@
+.table-fixed {
+  overflow-y: scroll;
+  border-collapse: collapse;
+}
