@@ -11,7 +11,7 @@ CRUD de para los datos de los aprendices de apoyo de sostenimiento para los meto
         2.3 python-dotenv
         2.4 pymongo
 
-> el uso de este CRUD es libre puede crear nuevas versiones pero depara python se necesita virtualenv y conocimiento en python3, mongodb, variables de entorno y terminal de comandos.
+> el uso de este CRUD es libre puede crear nuevas versiones pero para python se necesita virtualenv y conocimiento en python3, mongodb, variables de entorno y terminal de comandos.
 
 ## navegadores que soportar materialize y es6+
 | navegador | version |
