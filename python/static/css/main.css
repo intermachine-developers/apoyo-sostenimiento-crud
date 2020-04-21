@@ -2,3 +2,8 @@
   overflow-y: scroll;
   border-collapse: collapse;
 }
+
+.table-fixed thead th {
+  position: sticky;
+  top: -0.5%;
+}
